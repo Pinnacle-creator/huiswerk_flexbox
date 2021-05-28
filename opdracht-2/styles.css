@@ -1,7 +1,9 @@
 /* ======================================================
    OEFENEN MET FLEXBOX
 ========================================================= */
-
+body {
+    font-size: 18px;
+}
 /* Schrijf hier  jouw CSS! */
 .one {
     display:flex;
@@ -18,15 +20,41 @@
 .three {
     display:flex;
     flex-direction: row;
-    justify-content: space-between
-
+    justify-content: space-between;
+    align-items: center;
 }
 
-.item {
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 400px;
+    align-items: flex-start;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.three .list li {
+        align-items: flex-start;
+}
+
+.list2 {
+   height: 18px;
+}
+
+form {
     display:flex;
-    flex-size
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#username {
+.five {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.five article {
+    flex-basis: 360px;
+    flex-grow: 1;
 }
